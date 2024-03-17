@@ -1,5 +1,4 @@
 //code
-
 console.log("Hey there! Iam JS");
 
 //to run this on node we have two ways
