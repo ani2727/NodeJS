@@ -1,0 +1,31 @@
+RestAPI or RestFullAPI
+----------------------
+
+           Request
+Server <---------------- Client(Mobile,Browser,Alexa)
+       ----------------> 
+           Response
+       
+I) REST API works on server client architecture which means server and client are two different entities without any dependencies.
+
+Here, The response can be of any form(html doc,Json,Image,Text)
+If the response received is of html doc then if the client is browser then it is OK but what if it is mobile or alexa.
+And here we are deciding in which format the date should be retrieved (Here the client is dependent on server but in RESTFULL API it is not going to happen).
+
+To perform this: 
+1) We can do SERVER SIDE RENDERING(SSR) i.e we create the html doc at server itself and will be receiving as response.
+2) JSON(JavaScript Object Notation) --> Key:Value pairs.
+
+If the client is browser then it is good to send html doc as data.
+But if the client is mobile,alexa or something then it is good to have JSON data.
+
+II) Always respect the HTTP methods.
+  Get/user - get User data
+  Post - handle new user creation
+  Put 
+  Patch
+  Delete
+
+  Post - updateUser //why to use post method for update instead of using patch. This is not effective also creates a confusion.
+  Post - createuser // same with this line 
+But in RestFull API we have to give importance to every http method equally.
