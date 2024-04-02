@@ -1,0 +1,7 @@
+HTTP Headers are the important part of the API request and response as they represent the meta data associated with the API request and response
+
+Headers carry the information for the request and response body
+
+Two types of headers:
+1. Request headers
+2. Response headers
